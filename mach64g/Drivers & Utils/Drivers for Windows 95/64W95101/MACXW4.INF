@@ -1,0 +1,140 @@
+; INF file for mach64 MACXW4 display driver.
+
+[version]
+Class=DISPLAY
+signature="$Windows 95$"
+Provider=%Mfg%
+
+[SourceDisksNames]
+1="MACXW4",,1
+
+[SourceDisksFiles]
+macxw4.drv=1
+macxw4.vxd=1
+atihal64.dll=1
+atidpp.dll=1
+atidplx.dll=1
+atipita.dll=1
+atictl32.dll=1
+atipxdef.hlp=1
+
+;----------------------------------------
+; Manufacturers 
+
+[Manufacturer]
+"%Mfg%"=Mfg
+
+;----------------------------------------
+; Driver sections
+
+[Mfg]
+%*PNP0916.DeviceDesc%=MACXW4, *PNP0916			; mach64
+%PCI\VEN_1002&DEV_4758.DeviceDesc%=MACXW4, PCI\VEN_1002&DEV_4758        ; mach64
+
+;----------------------------------------
+; Install sections
+
+[MACXW4]
+CopyFiles=MACXW4_CopyFiles
+DelReg=DEL_CURRENT_REG
+AddReg=MACXW4_AddReg
+LogConfig=VGA.LogConfig
+
+;----------------------------------------
+; Common DelReg sections
+
+[DEL_CURRENT_REG]
+HKR,,DevLoader
+HKR,,Ver
+HKR,DEFAULT
+HKR,MODES
+HKR,CURRENT
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Controls Folder\Display\shellex\PropertySheetHandlers\DriverPages"
+
+;----------------------------------------
+; Model AddReg sections
+
+[MACXW4_AddReg]
+HKR,,Ver,,4.0
+HKR,,DevLoader,,*vdd
+HKR,DEFAULT,Mode,,"8,640,480"
+HKR,DEFAULT,drv,,macxw4.drv
+HKR,DEFAULT,vdd,,"*vdd,*vflatd"
+HKR,DEFAULT,minivdd,,macxw4.vxd
+HKR,DEFAULT,RefreshRate,,"-1"
+HKR,DEFAULT,DDC,,"1"
+HKR,"MODES\4\640,480",drv,,vga.drv
+HKR,"MODES\4\640,480",vdd,,*vdd
+HKR,"MODES\4\800,600"
+HKR,"MODES\4\1024,768"
+HKR,"MODES\4\1152,864"
+HKR,"MODES\4\1280,1024"
+HKR,"MODES\4\1600,1200"
+HKR,"MODES\8\640,480"
+HKR,"MODES\8\800,600"
+HKR,"MODES\8\1024,768"
+HKR,"MODES\8\1152,864"
+HKR,"MODES\8\1280,1024"
+HKR,"MODES\8\1600,1200"
+HKR,"MODES\16\640,480"
+HKR,"MODES\16\800,600"
+HKR,"MODES\16\1024,768"
+HKR,"MODES\16\1152,864"
+HKR,"MODES\16\1280,1024"
+HKR,"MODES\16\1600,1200"
+HKR,"MODES\24\640,480"
+HKR,"MODES\24\800,600"
+HKR,"MODES\24\1024,768"
+HKR,"MODES\24\1152,864"
+HKR,"MODES\24\1280,1024"
+HKR,"MODES\32\640,480"
+HKR,"MODES\32\800,600"
+HKR,"MODES\32\1024,768"
+HKR,"MODES\32\1152,864"
+
+; property sheet reg additions
+
+HKR,,EnumPropPages,,"atidpp.dll,EnumPropPages"
+HKCR,"CLSID\{C7A2F400-9A8B-11CE-95C9-0020C500A670}\InProcServer32",,,"atidplx.dll"
+HKCR,"CLSID\{C7A2F400-9A8B-11CE-95C9-0020C500A670}\InProcServer32",ThreadingModel,,"Apartment"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Controls Folder\Display\shellex\PropertySheetHandlers\ATIPages",,,"{C7A2F400-9A8B-11CE-95C9-0020C500A670}"
+
+;----------------------------------------
+; File Update References
+
+[DestinationDirs]
+DefaultDestDir=11               ; LDID_SYS
+
+;----------------------------------------
+; CopyFiles sections
+
+[MACXW4_CopyFiles]
+macxw4.drv
+macxw4.vxd
+atihal64.dll
+atidpp.dll
+atidplx.dll
+atipita.dll
+atictl32.dll
+atipxdef.hlp
+
+;----------------------------------------
+; LogConfig sections
+
+[VGA.LogConfig]
+ConfigPriority=HARDWIRED
+IOConfig=3B0-3BB
+IOConfig=3C0-3DF
+MemConfig=A0000-AFFFF
+MemConfig=C0000-C7FFF,D0000-D7FFF,E0000-E7FFF
+MemConfig=B8000-BFFFF
+
+;----------------------------------------
+; User visible strings
+
+[Strings]
+ClassName="Display"
+Mfg="ATI Tech. - Enhanced"
+*PNP0916.DeviceDesc="ATI mach64 (macxw4)"
+PCI\VEN_1002&DEV_4758.DeviceDesc="ATI mach64 PCI (macxw4)"
+

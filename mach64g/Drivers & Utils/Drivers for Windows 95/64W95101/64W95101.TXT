@@ -1,0 +1,132 @@
+
+mach64, 64W95101.ZIP
+*****************************
+
+1.0     Introduction
+2.0     Installation Notes
+3.0     Changing Color Depth, Resolution and/or Font Sizes 
+4.0     mach64 Enhanced Windows 95 Driver Features
+
+*****************************
+
+1.0     Introduction
+
+This diskette contains the latest ATI Windows 95 mach64 enhanced 
+display driver.  This driver should be used if you experience any 
+difficulties with the driver provided on the Microsoft Windows 95 CDROM 
+or if you wish to access the new features provided by this driver. 
+
+*****************************
+
+2.0     Installation Notes
+
+1. Ensure that you have a copy of PKUNZIP.EXE, v1.10 or later.  PKUNZIP 
+is available on most BBS and information services, including the ATI 
+BBS and CompuServe.
+
+2. Start Windows 95. 
+
+3. Start an MS DOS prompt.
+
+4. Unzip 64W95101.ZIP into a temporary directory on your hard disk.  
+For example:
+
+MD \ATITEMP
+PKUNZIP 64W95101.ZIP \ATITEMP
+
+5. Exit the MS DOS prompt, and return to the Windows 95 desktop.
+
+The Windows 95 mach64 enhanced display driver is a Windows 95 mini 
+driver.  It is installed and configured using the standard Windows 95 
+configuration utilities. 
+									  
+6. Click the right mouse button in an empty area of the desktop and 
+select the Properties entry of the menu. 
+ 
+7. Select the Settings page of the Display Properties sheet. 
+ 
+8. Click the Change Display Type... button. 
+ 
+9. In the Adapter Type area, click the Change... button.  
+ 
+10. The Select Device Dialog box will appear.  Click the Have Disk... 
+button.  
+ 
+11. Specify the source drive,(e.g. C:\ATITEMP) and click OK.  Highlight 
+the macxw4 entry and click OK to copy the driver to your hard disk. 
+ 
+12. If you have not already configured your monitor type do so now. In 
+the Monitor Type area, click the Change... button and select the 
+appropriate monitor.  Click OK to apply your changes. 
+ 
+13. Click Close to return to the Settings page. Click "Close" or 
+"Apply" to initiate your changes. 
+ 
+14. Restart the computer to run Windows 95 using this new driver. 
+ 
+15. Once the driver has been installed, you can delete the contents of 
+the temporary directory (DEL \ATITEMP\*.*) and delete the directory 
+itself (RD \ATITEMP).  
+
+16. We recommend that you keep a copy of the ZIP file, 64W95101.ZIP, in 
+case you need to install the driver again.      
+
+*****************************
+
+3.0     Changing Color Depth, Resolution and/or Font Sizes 
+
+When Windows 95 is up, you may configure your color depth, resolution  
+and/or font size in the Display Properties sheet as follows.  
+ 
+1. Click the right mouse button in an empty area of the desktop 
+and select Properties.   
+ 
+2. On the Settings page of the Display Properties sheet, choose your 
+preferred color support, resolutions and font size. Click "OK" or 
+"Apply" to initiate your changes. 
+ 
+3. On the Adjustment Page of the Display Properties sheet, you may 
+further customize your display.  
+ 
+Note that these values reflect the monitor configuration you performed  
+using the Settings page - Change Display Type - Monitor Type.  
+ 
+4. Click Apply or OK to switch to the new setting. 
+
+Note: Windows 95 will require a re-start to implement certain display 
+      settings changes.
+
+*****************************
+
+4.0     mach64 Enhanced Windows 95 Driver Features
+ 
+The Windows 95 mach64 Enhanced Features enhanced display driver 
+supports the following additional features: 
+ 
+ - The ATI Adjustment page is added to the Display Properties sheet to 
+   provide monitor setup and adjustment. Use this page to adjust your  
+   monitors refresh rate and adjust your screen size and position.  
+ 
+   1. To invoke the ATI Adjustment page click the right mouse button  
+   in an empty area of the desktop. 
+    
+   2. Select the Properties entry.  
+    
+   3. Select the ATI Adjustment tab. 
+ 
+  
+ - The ATI Adapter Settings page is added to the Adapter Properties
+   sheet to provide low level hardware configuration.  
+    
+   1. To invoke the ATI Adapter Settings page activate the System 
+   applet in the Control Panel.  
+    
+   2. Select the Device Manager tab. 
+ 
+   3. Double-click the Display adapters item in the list. 
+    
+   4. Double-click the ATI adapter entry.  
+    
+   5. Select the Settings tab.             
+    
+ 

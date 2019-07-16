@@ -1,0 +1,46 @@
+;---------------------------------------------------------------------------
+;                                 INSTALL.VSF
+;
+; NOTE: This file should be modified by authorized personnel only.
+;       Failure to do so may result in improper operation of card.
+;---------------------------------------------------------------------------
+
+[mfg_name]
+ATI Technologies Inc.
+[DRAM_ISA_name]
+ATI ISA mach64
+[VRAM_ISA_name]
+ATI ISA mach64
+[VRAM_EISA_name]
+ATI EISA mach64
+[VRAM_MCA_name]
+ATI MCA mach64
+[DRAM_VLB_name]
+ATI VLB mach64
+[VRAM_VLB_name]
+ATI VLB mach64
+[DRAM_PCI_name]
+ATI PCI mach64
+[VRAM_PCI_name]
+ATI PCI mach64
+[revision]
+1.55(BBS)
+[year]
+1995
+[border]
+1f
+[background]
+34
+[foreground]
+1f
+[background char]
+20
+[top banner color]
+4e
+[bottom banner color]
+4e
+[info window color]
+70
+[disk]
+win 1 .
+video 1 .

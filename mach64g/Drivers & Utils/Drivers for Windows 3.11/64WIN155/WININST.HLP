@@ -1,0 +1,122 @@
+windir       83
+winundir     84
+WINver       85 86 89 86
+WIN31menu    88 88 87 87
+wife_check   90 90 90 90
+
+
+85
+If you have not yet installed a
+Windows directory onto your hard
+drive, exit to DOS, install one from
+the original Windows package, and
+run this installation program again.
+
+Select the version number of Windows
+that you have currently installed in
+your system.  If it is not on this
+menu, there may not be an
+appropriate display driver to
+support your version of Windows.
+Consult Customer Support at the
+phone number listed in the User's
+Guide.
+
+
+86
+Select the version number of Windows
+that you have installed in your
+system.  This program will attempt
+to uninstall the enhanced drivers
+that you have installed for this
+display adapter.  It will remove the
+drivers along with the associated
+files, and clean up the appropriate
+Windows .INI files.
+
+
+83
+For non-networked Windows, this
+entry should contain a full path to
+an EXISTING Windows directory.  If
+you have not yet installed Windows
+onto your hard drive, install one
+before running this program.
+
+For networked Windows, you have to
+install the display drivers to an
+existing local Windows directory in
+your own workstation.  Enter the
+full path to that directory.
+
+Format of this entry:
+
+           d:\dirname
+
+where d is the drive letter; dirname
+is the directory name starting from
+the root (i.e. the leading "\" must
+be present).
+
+
+84
+For non-networked Windows, this
+entry should contain a full path to
+the Windows directory, to which you
+have installed our enhanced drivers.
+
+For networked Windows, this entry is
+the local Windows directory in your
+own workstation, where you installed
+your display adapter.
+
+Format of this entry:
+
+           d:\dirname
+
+where d is the drive letter; dirname
+is the directory name starting from
+the root (i.e. the leading "\" must
+be present).
+
+
+87
+Select the option you desire.  All
+files, including the drivers and
+associated files, will be copied to
+your Windows directory.
+
+
+88
+Select the option you desire.  All
+files, including the drivers and
+associated files, will be copied to
+your Windows directory.
+
+The Multimedia Video Acceleration
+(MVA) drivers will accelerate Video
+playback performance when used with
+Microsoft's Video for Windows.  If
+you do not have Video for Windows
+installed on your system, do not
+select this option.
+
+
+89
+This selection will display the
+Installation Notes.
+
+These notes contain last minute
+information concerning the Windows
+driver that may not have made it
+into the User's Manual in time for
+publication.
+
+
+90
+Select the appropriate language
+version of Windows that you are
+installing for.
+
+
+-1

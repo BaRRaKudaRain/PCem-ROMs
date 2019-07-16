@@ -1,0 +1,66 @@
+
+
+mach64, 64WIN155.ZIP
+*****************************
+
+1.0	Introduction
+2.0	Installation Notes
+3.0	mach64 1.55 Fixed list
+
+*****************************
+
+1.0     Introduction
+
+The mach64 device drivers supplied here are for Windows 3.1 and Windows 
+for Workgroups 3.11.
+
+*****************************
+
+2.0	Installation Notes
+
+IF YOU HAVE NOT INSTALLED A mach64 WINDOWS DRIVER PREVIOUSLY, YOU 
+MAYREQUIRE YOUR MICROSOFT WINDOWS DISKETTES TO COMPLETE THE 
+INSTALLATION OF THIS DRIVER.  
+
+1. Ensure that you have a copy LOAD64.ZIP.  It is available on the ATI 
+BBS, ftp site (ftp.atitech.ca), and on our CompuServe forum (GO 
+ATITECH).
+
+2. Ensure that you have a copy of PKUNZIP.EXE, v1.10 or later.  PKUNZIP 
+is available on most BBS and information services, including the ATI 
+BBS and CompuServe.
+
+3. Do NOT attempt to perform the driver installation from within 
+Windows Exit Windows completely, and perform the following operations 
+in DOS.
+
+4. Unzip LOAD64.ZIP and 64WIN155.ZIP into the same temporary directory 
+on your hard disk, then run the LOAD64.EXE utility.  For example:
+
+MD \ATITEMP
+PKUNZIP LOAD64.ZIP \ATITEMP
+PKUNZIP 64WIN155.ZIP \ATITEMP
+CD \ATITEMP
+LOAD64.EXE
+
+5. Follow the screen prompts for installing the Windows driver.  
+
+IF YOU RECEIVE AN ERROR MESSAGE, INDICATING THAT A CERTAIN FONT (.fon) 
+FILE IS NOT PRESENT, YOU WILL NEED TO RUN WINDOWS SETUP FROM DOS TO 
+COMPLETE THE INSTALLATION.  WINDOWS SETUP WILL PROMPT YOU FOR THE DISKS 
+ON WHICH THESE FONT FILES ARE FOUND.
+
+6. Once the driver has been installed, you can delete the contents of 
+the temporary directory (DEL \ATITEMP\*.*) and delete the directory 
+itself (RD \ATITEMP).  
+
+7. We recommend that you keep a copy of the ZIP files (64WIN155.ZIP and 
+LOAD64.ZIP), in case you need to install the driver again.      
+
+*****************************
+
+3.0	mach64 1.55 Fixed list
+
+This driver is primarily designed to support the complete ATI mach64 
+product line, it is not intended to correct outstanding issues.
+
