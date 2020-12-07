@@ -9,3 +9,4 @@ Everyone who contributed will be mentioned in this file.
 
 * Me
 * Alexander Bulachevsky
+* Tobias Mädel
