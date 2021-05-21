@@ -3,7 +3,7 @@ This is a collection of PCem roms.
 
 ## Getting started
 
-Get the latest PCem v15 from [here](https://pcem-emulator.co.uk/files/PCemV15Win.zip) if you using Windows. Or compile it from the source for Linux. Get the source [here](https://pcem-emulator.co.uk/files/PCemV15Linux.tar.gz). Download zip of this repository and extract it to the roms folder.  Now configure the emulator and enjoy.
+Get the latest PCem v15 from [here](https://pcem-emulator.co.uk/files/PCemV17Win.zip) if you using Windows. Or compile it from the source for Linux. Get the source [here](https://pcem-emulator.co.uk/files/PCemV17Linux.tar.gz). Download zip of this repository and extract it to the roms folder.  Now configure the emulator and enjoy.
 
 ## Contributing
 
